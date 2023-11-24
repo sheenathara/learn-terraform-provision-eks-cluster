@@ -22,27 +22,27 @@ resource "aws_subnet" "private-us-east-1b" {
   }
 }
 
-resource "aws_subnet" "public-us-east-1a" {
+resource "aws_subnet" "publiceks-us-east-1a" {
   vpc_id                  = aws_vpc.maineks.id
   cidr_block              = "10.0.64.0/19"
   availability_zone       = "us-east-1a"
-  map_public_ip_on_launch = true
+  map_publiceks_ip_on_launch = true
 
   tags = {
-    "Name"                       = "public-us-east-1a"
+    "Name"                       = "publiceks-us-east-1a"
     "kubernetes.io/role/elb"     = "1"
     "kubernetes.io/cluster/demo" = "owned"
   }
 }
 
-resource "aws_subnet" "public-us-east-1b" {
+resource "aws_subnet" "publiceks-us-east-1b" {
   vpc_id                  = aws_vpc.maineks.id
   cidr_block              = "10.0.96.0/19"
   availability_zone       = "us-east-1b"
-  map_public_ip_on_launch = true
+  map_publiceks_ip_on_launch = true
 
   tags = {
-    "Name"                       = "public-us-east-1b"
+    "Name"                       = "publiceks-us-east-1b"
     "kubernetes.io/role/elb"     = "1"
     "kubernetes.io/cluster/demo" = "owned"
   }
@@ -71,27 +71,27 @@ resource "aws_subnet" "private-us-east-1b" {
   }
 }
 
-resource "aws_subnet" "public-us-east-1a" {
+resource "aws_subnet" "publiceks-us-east-1a" {
   vpc_id                  = aws_vpc.maineks.id
   cidr_block              = "10.0.64.0/19"
   availability_zone       = "us-east-1a"
-  map_public_ip_on_launch = true
+  map_publiceks_ip_on_launch = true
 
   tags = {
-    "Name"                       = "public-us-east-1a"
+    "Name"                       = "publiceks-us-east-1a"
     "kubernetes.io/role/elb"     = "1"
     "kubernetes.io/cluster/demo" = "owned"
   }
 }
 
-resource "aws_subnet" "public-us-east-1b" {
+resource "aws_subnet" "publiceks-us-east-1b" {
   vpc_id                  = aws_vpc.maineks.id
   cidr_block              = "10.0.96.0/19"
   availability_zone       = "us-east-1b"
-  map_public_ip_on_launch = true
+  map_publiceks_ip_on_launch = true
 
   tags = {
-    "Name"                       = "public-us-east-1b"
+    "Name"                       = "publiceks-us-east-1b"
     "kubernetes.io/role/elb"     = "1"
     "kubernetes.io/cluster/demo" = "owned"
   }
